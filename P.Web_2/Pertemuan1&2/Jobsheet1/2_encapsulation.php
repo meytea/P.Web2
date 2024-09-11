@@ -8,13 +8,6 @@
         private $nim;
         private $jurusan;
 
-        //Constructor untuk menginsialisasi atribut
-        public function __construct($nama, $nim, $jurusan) {
-            $this->nama = $nama;
-            $this->nim = $nim;
-            $this->jurusan = $jurusan;
-        }
-
         //Metode atau Function
         //Getter dan Setter untuk atribut nama
         public function getNama(){
@@ -45,7 +38,10 @@
     }
 
     //Instansiasi Objek dari class Mahasiswa menggunakan setter
-    $mahasiswa = new Mahasiswa("Meilita Ayu Nur Khasanah", "230102038", "Komputer dan Bisnis");
+    $mahasiswa = new Mahasiswa(); //"Meilita Ayu Nur Khasanah", "230102038", "Komputer dan Bisnis"
+    $mahasiswa->setNama("Meilita Ayu Nur Khasanah");
+    $mahasiswa->setNim ("230102038");
+    $mahasiswa->setJurusan ("Komputer dan Bisnis");
 
     //Mengakses metode getter
     echo $mahasiswa->getNama();
@@ -57,9 +53,9 @@
     echo "<br>";
 
     //Mengakses dan mengubah data menggunakan setter
-    $mahasiswa->setNama("Khasanah Meilita Ayu");
-    $mahasiswa->setNim("230102030");
-    $mahasiswa->setJurusan("Teknik Informatika");
+    $mahasiswa->setNama ("Meilita Ayu Nur Khasanah");
+    $mahasiswa->setNim ("230102038");
+    $mahasiswa->setJurusan ("Teknik Informatika");
     echo "<b>Data Setelah Di Ubah</b><br>";
 
     //Mengakses metode getter

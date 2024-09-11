@@ -1,50 +1,34 @@
 <?php
-    //Definisi class pengguna (parent class)
-    class Pengguna {
+// Definisi class Pengguna (parent class)
+class Pengguna {
+    // Atribut public (dapat diakses di mana saja)
+    public $nama;
 
-        //Atribut atau Properties protect (bisa di akses oleh subclass)
-        protected $nama;
-
-        //Constructor untuk menginsialisasi atribut
-        public function __construct($nama) {
-            $this->nama = $nama;
-        }
-
-        //metode untuk mendapatkan nama pengguna
-        public function getNama() {
-            return $this->nama;
-        }
+    // Metode untuk mendapatkan nama pengguna (getter)
+    public function getNama() {
+        return $this->nama;
     }
+}
 
-    //Definisi class Dosen yang mewarisi/ mengkases class pengguna
-    class Dosen extends Pengguna {
+// Definisi class Dosen yang mewarisi/mengakses class Pengguna
+class Dosen extends Pengguna {
+    // Atribut public tambahan untuk class Dosen
+    public $mataKuliah;
 
-        //Atribut tambahan untuk class Dosen
-        private $mataKuliah;
-
-        //Memanggil constructor dari parent class
-        public function __construct($nama, $mataKuliah) {
-            parent::__construct($nama);
-            $this->mataKuliah = $mataKuliah;
-        }
-
-        //metode untuk mendapatkan mata kuliah
-            public function getMatkul() {
-                return $this->mataKuliah;
-        
-        }
-
-        public function tampilDataDosen() {
-            echo "Nama Dosen    :" . $this->getNama(). "<br>";
-            echo "Mata Kuliah    :" . $this->getMatkul(). "<br>";
-        }
+    // Metode untuk menampilkan data dosen 
+    public function tampilDataDosen() {
+        echo "Nama Dosen    : " . $this->getNama() . "<br>";
+        echo "Mata Kuliah   : " . $this->mataKuliah . "<br>";  // Mengakses atribut langsung
     }
+}
 
-    
+// Instansiasi objek dari class Dosen
+$dosen = new Dosen();
 
-    //Instansiasi objek dari class Dosen
-    $dosen = new Dosen ("Agus Widodo", "Matematika");
+// Mengakses atribut public langsung dari luar kelas
+$dosen->nama = "Agus Widodo";       // Akses langsung ke atribut public
+$dosen->mataKuliah = "Matematika";   // Akses langsung ke atribut public
 
-    //Menampilkan data nama menggunakan get
-    echo $dosen->tampilDataDosen();
+// Menampilkan data dosen
+$dosen->tampilDataDosen();
 ?>
