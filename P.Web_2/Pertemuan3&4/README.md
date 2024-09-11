@@ -1,6 +1,6 @@
 <h2>JobSheet2</h2>
 
-<h3>1. Membuat Class dam Object</h3>
+<h3>1. Membuat Class dan Object</h3>
 
 ```php
 <?php
@@ -29,6 +29,10 @@
     echo $mhs1->tampilkanData();
 ?>
 ```
+
+Output : ![1](https://github.com/user-attachments/assets/90e8b89d-8e33-4979-9bc1-23385cd0b45b)
+
+
 <h4>Langkah-langkah Pembuatan Kelas </h4>
 - Memberikan nama Kelas Mahasiswa 
 
@@ -55,7 +59,7 @@ Class Mahasiswa
         }
 ```
 
-Output : https://github.com/meytea/P.Web-2/blob/main/pweb2/Jobsheet2/output/1.png
+Output : 
 
 
 <h3>2. Implementasi Constructor</h3>
@@ -105,7 +109,8 @@ Output : https://github.com/meytea/P.Web-2/blob/main/pweb2/Jobsheet2/output/1.pn
             $this->jurusan = $jurusan;
         }
 ```
-Output :
+Output : ![2](https://github.com/user-attachments/assets/5aa73b23-2478-4a43-bf09-71de1ebadec6)
+
 
 
 <h3>3. Membuat Metode Tambahan</h3>
@@ -168,7 +173,8 @@ Output :
 ```
 
 
-Output :
+Output : ![3](https://github.com/user-attachments/assets/32a1fa26-213f-405f-aedd-851d47f26740)
+
 
 
 <h3>4. Penggunaan Atribut dan Metode</h3>
@@ -232,7 +238,8 @@ Output :
         }
 ```
 
-Output :
+Output : ![4](https://github.com/user-attachments/assets/b55e3c5b-5f51-43ee-ab74-ede7290a165c)
+
 
 
 <h3>Tugas</h3>
@@ -285,5 +292,6 @@ Class Dosen
         }
 ```
 
-Output :
+Output : ![tugas](https://github.com/user-attachments/assets/f10f4a0d-f7a1-422a-ba27-a5f9f499819b)
+
 
