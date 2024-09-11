@@ -30,9 +30,6 @@
 ?>
 ```
 
-Output : ![1](https://github.com/user-attachments/assets/90e8b89d-8e33-4979-9bc1-23385cd0b45b)
-
-
 <h4>Langkah-langkah Pembuatan Kelas </h4>
 - Memberikan nama Kelas Mahasiswa 
 
@@ -59,7 +56,7 @@ Class Mahasiswa
         }
 ```
 
-Output : 
+Output : ![1](https://github.com/user-attachments/assets/90e8b89d-8e33-4979-9bc1-23385cd0b45b)
 
 
 <h3>2. Implementasi Constructor</h3>
